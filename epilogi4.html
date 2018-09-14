@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Οριστικοποίηση Εγγυήσεων</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_new.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+    
+    <link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">   
+    <script src="epilogi4.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div style="margin-top: -10px; margin-bottom: 20px;"><span style="font-weight: bolder;">Οριστικοποίηση Εγγυήσεων</span></div>
+      <div class="nav-side-menu">    
+        <div class="brand">Επιλογές Προβολής Δεδομένων</div>
+        <li rel="istorika_stoixeia">Στοιχεία Εγγυήσεων ΕΦ</li>
+        <form style="display:none;" id="istorika_stoixeia">
+          <div class="row">
+            <div class="col-sm-6">
+              <span class="floatmeleft">Μήνας Υπολογισμού:</span>
+              <input id="month_ist" class="floatmeright" type="text" size="10" placeholder="01">      
+              <span class="floatmeleft">Έτος Υπολογισμού:</span>
+              <input id="year_ist" class="floatmeright" type="text" size="10" placeholder="2017">
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-sm-6">
+              <input class="display_date_ist" type="submit" class="btn" value="Φορτωση"></input>
+            </div>
+          </div>              
+        </form>
+        <li rel="arxikes_eggyiseis">Αρχικές Εγγυήσεις Νέων ΕΦ</li>
+        <form style="display:none;" id="arxikes_eggyiseis">
+          <div class="row">
+            <div class="col-sm-6">
+              <span class="floatmeleft">Μήνας Υπολογισμού:</span>
+              <input class="floatmeright" type="text" size="10" placeholder="01">      
+              <span class="floatmeleft">Έτος Υπολογισμου:</span>
+              <input class="floatmeright" type="text" size="10" placeholder="2017">
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-sm-6"> 
+              <input class="display_date_arx" type="submit" value="Φορτωση"></input>
+            </div>
+          </div>              
+      </form>
+    </div>
+
+    <div class="nav-side-menu right">    
+      <div class="brand">Άλλες Ενέργειες</div>
+        <li>
+          <form>
+            <input  id="ProvApotel" type="submit" value="Προβολη Αποτελεσματων"></input>
+          </form> 
+        </li>
+        <li>
+          <form>
+            <input id="StoixYpol" type="submit" value="Προβολη Στοιχειων Υπολογισμου"></input>
+          </form> 
+        </li>
+        <li>
+          <form>
+            <input id="SaveEpilogi4" class="important" type="submit" value="Οριστικοποίηση Αποτελεσματων"></input>
+          </form>
+        </li>
+        <li>
+          <form>
+            <input id="ExtractToFile4" type="submit" value="Εξαγωγη στοιχειων σε Αρχειο"></input>
+          </form> 
+        </li>
+        <li>
+          <form>
+            <input  type="submit" value="Εξαγωγη  Προτυπων"></input>
+          </form>
+        </li>
+        <li>
+          <form action="index.html">
+            <input type="submit" value="Επιστροφη στην Αρχικη Οθονη"></input>
+          </form>
+        </li>
+    </div>
+
+    <div class="display_table" style="display: none;">
+      <div class="table_btns"> 
+
+        <div id="datesStoixYpOrist" style="display:none;"> 
+          <div>
+            <span class="label label-info">Εκτιμωμενο Εξαμηνο Αναφορας:</span>
+            <label id="anafora"></label>
+            <span class="label label-info">Ημερομηνια:</span>
+            <label id="date"></label>
+          </div>
+        <div>
+          <span class="label label-info">Μήνας Εμφάνισης:</span> 
+          <label id="month"></label>
+        </div>
+       </div>         
+            <div class="my-btns2">
+              <div class="row">
+                <div class="col-sm-6">
+                  <span class="label label-info exception">Εκδοση:</span>
+                  <select style="margin-left:5px;" id="version"></select> 
+                  <label style="font-weight:lighter;">  [0:Όλες οι εκδόσεις]</label>  
+                </div>
+                <div class="col-sm-6">
+                  <input class="display_vers" type="submit" class="btn" value="Φορτωση"></input>
+                </div>
+                <div class="col-sm-6">
+                  <span class="label label-info exception">Ημερομηνία :</span> <label id="choosedate"></label>
+                </div> 
+              </div>  
+            </div>      
+        <div id="example1" class="hot" ></div>
+        <div id="example2" class="hot2" style="display: none;"></div>
+
+        <div  class="my-btns" style="display: none;" >
+          <button type="button" id="month-1" class="my_btn">1ος μηνας</button>
+          <button type="button" id="month-2" class="my_btn">2ος μηνας</button>
+          <button type="button" id="month-3" class="my_btn">3ος μηνας</button>
+          <button type="button" id="month-4" class="my_btn">4ος μηνας</button>
+          <button type="button" id="month-5" class="my_btn">5ος μηνας</button>
+          <button type="button" id="month-6" class="my_btn">6ος μηνας</button>
+        </div>
+    </div>
+  </div>  
+
+    </div>                                         
+  </body>
+</html>

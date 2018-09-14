@@ -1,0 +1,167 @@
+html,
+body {
+    height: 100%;
+    background-color: lightblue;
+}
+
+.body {
+    background-color: lightblue;
+}
+.main {
+    float:left;    
+    position: relative;
+    left: 48%;
+    top: 30%;
+/*    background-color: white;*/
+    z-index: 100;
+
+    height: 400px;
+    margin-top: -10%;
+
+    width: 600px;
+    margin-left: -45%;
+    margin-bottom: 10%;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 2%;
+}
+
+button{
+  margin-top: 0.5% !important;
+  margin-bottom: 0.5% !important;
+}
+
+input{
+  margin-left: 0.5% !important;
+  margin-bottom: 0.5% !important;
+}
+div.dates{
+    width:89%;
+    text-align:left;
+    margin-right: auto;
+    margin-left: auto;     
+}
+
+div.dates2{
+    width:93%;
+    text-align:left;
+    margin-right: auto;
+    margin-left: auto;     
+}
+
+
+.hot {
+    position: absolute;
+    width: 89%;
+    height: 370px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+/**firefox**/
+@-moz-document url-prefix() {
+.hot {
+    position: absolute;
+    width: 89%;
+    height: 370px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto; 
+   }
+}
+
+.hot2 {
+    position: absolute;
+    width: 89%;
+    height: 60px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.hot3 {
+    position: absolute;
+    width: 89%;
+    height: 300px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+
+/**firefox**/
+@-moz-document url-prefix() {
+.hot2 {
+    position: absolute;
+    width: 93%;
+    height: 60px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto; 
+   }
+}
+
+div.my-btns{
+    margin-top: 0.5%;
+    position: inherit !important;
+    width: 600px !important;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button.btn.btn-primary.clicked {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+input.btn.btn-success {
+    margin: 1%;
+}
+
+.center{
+  text-align:center;
+  padding-top: 2.5%;
+  margin-right: auto;
+  margin-left: auto;  
+}
+
+@media (min-width: 768px) {
+  .center {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .center {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .center {
+    width: 80%;
+  }
+}
+
+/*
+td.htDimmed{
+  white-space: pre-line;
+  max-width: 100px;
+}
+*/
+
+td {
+    white-space: pre-line;
+  max-width: 150px;
+}
+
+#HL_lst {
+  font-family: "Helvetica Neue";
+  margin-top: 8%;
+  margin-left: 6%;
+  float: left;
+}

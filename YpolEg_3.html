@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Υπολογισμος εγγυησεων</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_apotelesmata.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">     
+    <script src="YpolEg_3.js"></script>
+  </head>
+
+  <body style="background-color:lightblue">
+    <div class="main">
+      <div class="dates2">
+        <span class="label label-info">Μήνας Υπολογισμού :</span> 
+        <label id="month"></label>
+        <span class="label label-info">Έτος Υπολογισμού :</span>
+        <label id="year"></label>
+        <div style="margin-top:2%; margin-bottom:2%;">
+          <button type="button" class="btn btn-primary">Αποθηκευση Αποτελεσματων</button>
+          <button type="button" class="btn btn-primary">Εξαγωγη Στοιχειων σε αρχειο</button>
+          <button type="button" class="btn btn-primary">Προβολη Στοιχειων Υπολογισμου</button>
+          <button type="button" class="btn btn-primary clicked">Προβολη Αποτελεσματων</button>
+        </div> 
+      </div>          
+      <div id="example1" class="hot2"></div>
+      <div class="center">
+        <form action="index.html">
+          <input type="submit" class="btn btn-primary" value="Επιστροφή στην Αρχική Οθόνη"></input>
+        </form>
+      </div>
+      
+    </div>
+  </body>
+</html>

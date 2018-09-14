@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Υπολογισμος εγγυησεων</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_new.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="YpolEg_1.js"></script>
+  </head>
+  <body style="background-color:lightblue">
+    <div class="main">
+      <div class="nav-side-menu">    
+        <div class="brand">Ενέργειες</div>
+          <li>
+            <form>
+              <input type="submit" value="Αποθηκευση Αποτελεσματων"></input>
+            </form>
+          </li>
+          <li>
+            <form>
+              <input type="submit" value="Εξαγωγη στοιχειων σε Αρχειο"></input>
+            </form> 
+          </li>
+          <li>
+            <form>
+              <input  type="submit" value="Προβολη Στοιχειων Υπολογισμου"></input>
+            </form>
+          </li>
+          <li>
+            <form>
+              <input  type="submit" value="Προβολη Αποτελεσματων"></input>
+            </form>
+          </li>
+          <li>
+            <form action="index.html">
+              <input type="submit" value="Επιστροφη στην Αρχικη Οθονη"></input>
+            </form>
+          </li>
+      </div>
+
+      <div class="dates">
+        <span class="label label-info">Μήνας Υπολογισμού :</span> 
+        <label id="month"></label>
+        <span class="label label-info">Έτος Υπολογισμού :</span>
+        <label id="year"></label> 
+
+        <div id="example1" class="hot"></div>
+      
+      </div> 
+
+      
+    </div>
+  </body>
+
+</html>

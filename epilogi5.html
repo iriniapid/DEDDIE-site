@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Υπολογισμος εγγυησεων</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_new.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="epilogi5.js"></script>
+  </head>
+  <body style="background-color:lightblue">
+    <div class="main" >
+    <div class="dates">
+        <span class="label label-info">Ημερομηνια :</span>
+        <label>
+          <script> document.write(new Date().toLocaleDateString()); 
+          </script>
+        </label>
+    </div>
+    <div id="example1" class="hot"></div>
+
+   <!-- <div  class="my-btns" >
+      <button type="button" id="month-1" class="btn btn-primary">1ος μηνας</button>
+      <button type="button" id="month-2" class="btn btn-primary">2ος μηνας</button>
+      <button type="button" id="month-3" class="btn btn-primary">3ος μηνας</button>
+      <button type="button" id="month-4" class="btn btn-primary">4ος μηνας</button>
+      <button type="button" id="month-5" class="btn btn-primary">5ος μηνας</button>
+      <button type="button" id="month-6" class="btn btn-primary">6ος μηνας</button>
+    </div>-->
+    <div class="center">
+      <form style = "margin-top:1%;" action="#">
+        <input id="save_changes" type="submit" class="btn btn-success" value="Αποθήκευση Αλλαγών"></input>
+      </form>
+      <form style = "margin-top:1%;" action="index.html">
+        <input type="submit" class="btn btn-primary" value="Επιστροφή στην Αρχική Οθόνη"></input>
+      </form>
+    </div>
+   </div>
+        
+  </body>
+</html>

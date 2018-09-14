@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Προβολή Ιστορικών Στοιχείων</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_apotelesmata.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+    
+    <link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">   
+    <script src="epilogi6.js"></script>
+  </head>
+  <body style="background-color:lightblue">
+      <div class="main" >
+        <div class="dates">
+          <button type="button" class="btn btn-primary">Προβολη Αρχικων Εγγυησεων</button>
+          <button type="button" class="btn btn-success">Προβολη Ιστορικων Στοιχειων</button>
+          <form style="margin-top:1%;" class="form-horizontal">
+              <span class="label label-info">Μηνας Υπολογισμου:</span><input type="text" size=10 placeholder="Νοεμβριος">
+              <span class="label label-info">Ετος Υπολογισμου:</span><input type="text"  maxlength="4" size="3" placeholder="2017">
+          </form>
+              
+          <form class="form-horizontal">
+            <div class="form-group">  
+              <div style="float:left; margin-left:2%; margin-top:1%;" class="col-sm-6">
+                <span class="label label-info" style="margin-left:-5%;">Εκδοση:</span>
+                <input type="text"  maxlength="3" size="2">
+                <label>  [0:Όλες οι εκδόσεις]</label>       
+              </div> 
+              <button style="margin-top:1%!important; margin-left:2.5%;" type="button" class="btn btn-primary">Φορτωση Οριστικοποημενης Εκδοσης</button> 
+            </div>
+          </form>
+        <div style="margin-top:-1%" class="form-group">
+          <form style="float:left;" action="#">   
+            <input type="submit" class="btn btn-primary" value="Φορτωση"></input>
+          </form>
+          <form style="float:right; margin-left:1.9%;"action="index.html">
+            <input type="submit" class="btn btn-primary" value="Επιστροφη στην Αρχικη Οθονη"></input>
+          </form>
+          <form style="float:right; margin-bottom:1%;" >
+            <input type="submit" class="btn btn-primary" value="Εξαγωγη στοιχειων σε Αρχειο"></input>
+          </form>            
+        </div>            
+          <span class="label label-info">Μηνας Εμφανισης:</span> <label id="month"></label>
+        </div>
+
+        <div id="example1" class="hot"></div>
+
+        <div class="my-btns" >
+          <button type="button" class="btn btn-primary ">1ος μηνας</button>
+          <button type="button" class="btn btn-primary ">2ος μηνας</button>
+          <button type="button" class="btn btn-success">3ος μηνας</button>
+          <button type="button" class="btn btn-primary">4ος μηνας</button>
+          <button type="button" class="btn btn-primary">5ος μηνας</button>
+          <button type="button" class="btn btn-primary">6ος μηνας</button>
+        </div>
+        <div class="center">
+          <form>
+            <input type="submit" class="btn btn-primary" value="Προβολη Αποτελεσματων"></input>
+          </form>  
+          <form style="margin-top:1%;">
+            <input type="submit" class="btn btn-success" value="Προβολη Στοιχειων Υπολογισμου"></input>
+          </form>  
+          <form style="margin-top:1%;">
+            <input type="submit" class="btn btn-danger" value="Οριστικοποίηση Αποτελεσματων"></input>
+          </form>
+          <form style="margin-top:1%;">
+            <input  type="submit" class="btn btn-primary" value="Εξαγωγη  Προτυπων"></input>
+          </form>              
+        </div>
+      </div>                                           
+    </body>
+</html>
